@@ -22,7 +22,7 @@ class Program
 
 
         Console.WriteLine(transaction);
-        
+
         // --------------------- Account Testing ---------------------
 
         // Create a general account
@@ -42,6 +42,11 @@ class Program
         // Apply transactions to savings account
         savingsAccount.ApplyTransaction(transaction1);
         savingsAccount.ApplyTransaction(transaction2); 
+        
+
+        // --------------------- FinanceApp Simulation ---------------------
+        FinanceApp app = new FinanceApp();
+        app.Run();
 
     }
 }
